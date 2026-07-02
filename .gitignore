@@ -1,0 +1,10 @@
+api-credentials
+test*
+.claude
+__pycache__
+.terraform
+6.6.0
+7.8.0
+burst-1782383898
+current
+nginx
