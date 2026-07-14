@@ -8,3 +8,8 @@ __pycache__
 burst-1782383898
 current
 nginx
+analyse-lock-contention.py
+jm-wall.html
+plot.py
+tf_state.txt
+tfplan
