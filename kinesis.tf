@@ -2,7 +2,7 @@
 # Setup follows https://docs.etleap.com/documentation/sources/events/kinesis/#kinesis
 
 locals {
-  kinesis_stream_count = 50
+  kinesis_stream_count = 0
 }
 
 # Kinesis data streams, provisioned capacity (1 shard each).
