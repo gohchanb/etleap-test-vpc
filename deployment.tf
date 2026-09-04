@@ -28,9 +28,9 @@ resource "aws_key_pair" "ssh" {
 # }
 
 module "vpc" {
-  source = "git@github.com:etleap/terraform-aws-etleap-vpc-private.git?ref=vpc-nat-saturation-configurable-value-vik-8075" # This can also be changed to use private repo or even branch of it e.g. "git@github.com:etleap/terraform-aws-etleap-vpc-private.git?ref=vikings/job-monitoring-vpc#178788287" or it can also be just your local directory containing vpc module, e.g. `../terraform-aws-etleap-vpc-private`
-  # source = "etleap/etleap-vpc/aws"
-  # version = "1.16.0" # make sure to update to the latest one (or remove if using branch as a source)
+  # source = "git@github.com:etleap/terraform-aws-etleap-vpc-private.git?ref=vpc-nat-saturation-configurable-value-vik-8075" # This can also be changed to use private repo or even branch of it e.g. "git@github.com:etleap/terraform-aws-etleap-vpc-private.git?ref=vikings/job-monitoring-vpc#178788287" or it can also be just your local directory containing vpc module, e.g. `../terraform-aws-etleap-vpc-private`
+  source = "etleap/etleap-vpc/aws"
+  version = "1.19.0" # make sure to update to the latest one (or remove if using branch as a source)
 
   deployment_id = "test2" # !! Replace with the correct one
 
@@ -48,7 +48,7 @@ module "vpc" {
   # public_subnets          = ["subnet-0da4febe81aaf66aa", "subnet-051f89cb895df1a57", "subnet-099e7c385b534967e"]
   # private_subnets         = ["subnet-067f0791d940b3385", "subnet-0868b90b289777752", "subnet-037f37825d88724c6"]
 
-  key_name   = aws_key_pair.ssh.key_name
+  # key_name   = aws_key_pair.ssh.key_name
   # !! Set your name and email here. The domain is not "etleap.com", as we don't allow that
   first_name = "Benedict"
   last_name  = "Chan"
