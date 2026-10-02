@@ -13,3 +13,7 @@ jm-wall.html
 plot.py
 tf_state.txt
 tfplan
+.claude-flow
+.swarm
+ruvector.db
+prod-api-credentials
