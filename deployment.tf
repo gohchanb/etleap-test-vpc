@@ -30,7 +30,7 @@ resource "aws_key_pair" "ssh" {
 module "vpc" {
   # source = "git@github.com:etleap/terraform-aws-etleap-vpc-private.git?ref=vpc-nat-saturation-configurable-value-vik-8075" # This can also be changed to use private repo or even branch of it e.g. "git@github.com:etleap/terraform-aws-etleap-vpc-private.git?ref=vikings/job-monitoring-vpc#178788287" or it can also be just your local directory containing vpc module, e.g. `../terraform-aws-etleap-vpc-private`
   source = "etleap/etleap-vpc/aws"
-  version = "1.19.0" # make sure to update to the latest one (or remove if using branch as a source)
+  version = "1.20.1" # make sure to update to the latest one (or remove if using branch as a source)
 
   deployment_id = "test2" # !! Replace with the correct one
 
